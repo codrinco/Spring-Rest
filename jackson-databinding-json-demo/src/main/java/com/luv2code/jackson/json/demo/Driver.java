@@ -23,7 +23,8 @@ public class Driver {
             System.out.println("Last name = " + theStudent.getLastName());
             System.out.println("Street = " + theStudent.getAddress().getStreet());
             System.out.println("City = " + theStudent.getAddress().getCity());
-            System.out.println("Language 1 = " + theStudent.getLanguages()[0]);
+            for(String temp : theStudent.getLanguages())
+                System.out.print(temp + " ");
         } catch (Exception e) {
             e.printStackTrace();
         }
