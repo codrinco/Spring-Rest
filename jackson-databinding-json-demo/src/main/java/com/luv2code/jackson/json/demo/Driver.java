@@ -21,6 +21,8 @@ public class Driver {
             //print first name and last name
             System.out.println("First name = " + theStudent.getFirstName());
             System.out.println("Last name = " + theStudent.getLastName());
+            System.out.println("Street = " + theStudent.getAddress().getStreet());
+            System.out.println("City = " + theStudent.getAddress().getCity());
             System.out.println("Language 1 = " + theStudent.getLanguages()[0]);
         } catch (Exception e) {
             e.printStackTrace();
